@@ -169,7 +169,7 @@ export default function SitesVitrinePage() {
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                   <li>Formulaires de contact</li>
                   <li>Intégration de Google Maps</li>
-                  <li>{`Galeries d'images`}</li>
+                  <li>Galeries d'images</li>
                   <li>Liens vers les réseaux sociaux</li>
                 </ul>
               </CardContent>
@@ -188,7 +188,7 @@ export default function SitesVitrinePage() {
                   <li>Système de gestion de contenu</li>
                   <li>Interface intuitive</li>
                   <li>Mise à jour facile des textes et images</li>
-                  <li>{`Formation à l'utilisation incluse`}</li>
+                  <li>Formation à l'utilisation incluse</li>
                 </ul>
               </CardContent>
             </Card>
@@ -274,7 +274,7 @@ export default function SitesVitrinePage() {
                     <ul className="mt-4 space-y-2">
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Création de l'arborescence du site`}</span>
+                        <span>Création de l'arborescence du site</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -409,7 +409,7 @@ export default function SitesVitrinePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Vérification de l'accessibilité`}</span>
+                        <span>Vérification de l'accessibilité</span>
                       </li>
                     </ul>
                   </div>
@@ -443,7 +443,7 @@ export default function SitesVitrinePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Formation à l'utilisation du CMS`}</span>
+                        <span>Formation à l'utilisation du CMS</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -500,7 +500,7 @@ export default function SitesVitrinePage() {
                   <span className="text-sm text-muted-foreground">2024</span>
                 </div>
                 <CardTitle className="mt-2">ArchiDesign</CardTitle>
-                <CardDescription>{`Studio d'Architecture Moderne`}</CardDescription>
+                <CardDescription>Studio d'Architecture Moderne</CardDescription>
               </CardHeader>
               <CardContent className="p-4 pt-0">
                 <p className="text-sm text-muted-foreground">

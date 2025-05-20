@@ -185,7 +185,7 @@ export default function RefontePage() {
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                   <li>Conformité aux normes WCAG</li>
                   <li>Navigation au clavier</li>
-                  <li>{`Compatibilité avec les lecteurs d'écran`}</li>
+                  <li>Compatibilité avec les lecteurs d'écran</li>
                   <li>Contrastes et lisibilité optimisés</li>
                 </ul>
               </CardContent>
@@ -242,7 +242,7 @@ export default function RefontePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Analyse de l'expérience utilisateur`}</span>
+                        <span>Analyse de l'expérience utilisateur</span>
                       </li>
                     </ul>
                   </div>
@@ -279,7 +279,7 @@ export default function RefontePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Planification de l'architecture`}</span>
+                        <span>Planification de l'architecture</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -404,7 +404,7 @@ export default function RefontePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Vérification de l'intégrité des données`}</span>
+                        <span>Vérification de l'intégrité des données</span>
                       </li>
                     </ul>
                   </div>
@@ -435,7 +435,7 @@ export default function RefontePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Formation à l'utilisation`}</span>
+                        <span>Formation à l'utilisation</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -623,7 +623,7 @@ export default function RefontePage() {
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     <li className="flex items-start">
                       <span className="mr-2 text-primary">•</span>
-                      <span>{`Tunnel d'achat simplifié et optimisé`}</span>
+                      <span>Tunnel d'achat simplifié et optimisé</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 text-primary">•</span>

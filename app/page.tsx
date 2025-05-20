@@ -190,7 +190,7 @@ export default function Home() {
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm">
                   <li>Catalogue de produits</li>
-                  <li>{`Panier d'achat sécurisé`}</li>
+                  <li>Panier d'achat sécurisé</li>
                   <li>Passerelles de paiement</li>
                   <li>Gestion des stocks</li>
                 </ul>
@@ -396,7 +396,7 @@ export default function Home() {
                       </li>
                       <li className="flex items-center gap-2">
                         <Users className="h-5 w-5 text-primary" />
-                        <span>{`Formation à l'utilisation`}</span>
+                        <span>Formation à l'utilisation</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Globe className="h-5 w-5 text-primary" />

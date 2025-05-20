@@ -104,7 +104,7 @@ export default function EcommercePage() {
             <Card>
               <CardHeader className="pb-2">
                 <ShoppingCart className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>{`Expérience d'achat fluide`}</CardTitle>
+                <CardTitle>Expérience d'achat fluide</CardTitle>
                 <CardDescription>
                   Un parcours d'achat optimisé pour maximiser les conversions et
                   minimiser les abandons de panier.
@@ -112,7 +112,7 @@ export default function EcommercePage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>{`Panier d'achat intuitif`}</li>
+                  <li>Panier d'achat intuitif</li>
                   <li>Processus de commande simplifié</li>
                   <li>Création de compte facilitée</li>
                   <li>Sauvegarde du panier</li>
@@ -428,7 +428,7 @@ export default function EcommercePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Plan d'acquisition et de fidélisation`}</span>
+                        <span>Plan d'acquisition et de fidélisation</span>
                       </li>
                     </ul>
                   </div>
@@ -465,7 +465,7 @@ export default function EcommercePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Optimisation du parcours d'achat`}</span>
+                        <span>Optimisation du parcours d'achat</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -583,11 +583,11 @@ export default function EcommercePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Formation à l'administration`}</span>
+                        <span>Formation à l'administration</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Mise en place d'outils d'analyse`}</span>
+                        <span>Mise en place d'outils d'analyse</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />

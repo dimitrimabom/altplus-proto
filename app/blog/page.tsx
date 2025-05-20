@@ -217,7 +217,7 @@ export default function BlogPage() {
                 </p>
                 <div className="mt-4 space-y-2">
                   <Input placeholder="Votre email" type="email" />
-                  <Button className="w-full">{`S'abonner`}</Button>
+                  <Button className="w-full">S'abonner</Button>
                 </div>
               </div>
             </div>

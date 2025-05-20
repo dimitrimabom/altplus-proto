@@ -299,8 +299,8 @@ export default function PortfolioPage() {
             Nos <span className="text-primary">Réalisations</span>
           </h1>
           <p className="mt-6 max-w-3xl text-lg text-muted-foreground sm:text-xl">
-            Découvrez une sélection de projets que nous avons réalisés pour nos
-            clients dans différents secteurs d'activité.
+            {`Découvrez une sélection de projets que nous avons réalisés pour nos
+            clients dans différents secteurs d'activité.`}
           </p>
         </div>
       </section>
@@ -400,8 +400,8 @@ export default function PortfolioPage() {
               Ce que nos clients disent
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              La satisfaction de nos clients est notre priorité absolue. Voici
-              ce qu'ils pensent de notre travail.
+              {`La satisfaction de nos clients est notre priorité absolue. Voici
+              ce qu'ils pensent de notre travail.`}
             </p>
           </div>
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -416,7 +416,7 @@ export default function PortfolioPage() {
                   </CardHeader>
                   <CardContent className="flex-1">
                     <p className="text-muted-foreground">
-                      "{project.testimonial?.content}"
+                      {`"${project.testimonial?.content}"`}
                     </p>
                   </CardContent>
                   <CardFooter className="flex flex-col items-start">

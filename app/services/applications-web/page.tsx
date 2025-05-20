@@ -98,7 +98,7 @@ export default function ApplicationsWebPage() {
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                   <li>Analyse approfondie de vos besoins</li>
-                  <li>{`Solutions adaptées à votre secteur d'activité`}</li>
+                  <li>Solutions adaptées à votre secteur d'activité</li>
                   <li>Fonctionnalités spécifiques à votre métier</li>
                   <li>Architecture logicielle robuste</li>
                 </ul>
@@ -115,7 +115,7 @@ export default function ApplicationsWebPage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>{`Design centré sur l'utilisateur`}</li>
+                  <li>Design centré sur l'utilisateur</li>
                   <li>Navigation fluide et intuitive</li>
                   <li>Tableaux de bord personnalisables</li>
                   <li>Responsive sur tous les appareils</li>
@@ -431,7 +431,7 @@ export default function ApplicationsWebPage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Planification de l'infrastructure`}</span>
+                        <span>Planification de l'infrastructure</span>
                       </li>
                     </ul>
                   </div>
@@ -540,7 +540,7 @@ export default function ApplicationsWebPage() {
                     <ul className="mt-4 space-y-2">
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>{`Tests unitaires et d'intégration`}</span>
+                        <span>Tests unitaires et d'intégration</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -628,7 +628,7 @@ export default function ApplicationsWebPage() {
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card>
               <CardHeader>
-                <CardTitle>{`Gestion d'entreprise`}</CardTitle>
+                <CardTitle>Gestion d'entreprise</CardTitle>
                 <CardDescription>
                   Applications de gestion interne pour optimiser vos processus
                   métier.
@@ -709,8 +709,8 @@ export default function ApplicationsWebPage() {
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                   <li>Applications pour la santé</li>
-                  <li>{`Solutions pour l'immobilier`}</li>
-                  <li>{`Outils pour l'éducation`}</li>
+                  <li>Solutions pour l'immobilier</li>
+                  <li>Outils pour l'éducation</li>
                   <li>Applications pour la finance</li>
                 </ul>
               </CardContent>

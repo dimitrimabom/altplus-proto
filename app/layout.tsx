@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap", // ou "optional"
-  preload: false, // facultatif, évite les requêtes réseau si tu es offline
+  display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {

@@ -153,7 +153,7 @@ export default function ServicesPage() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
-                          <span>{`Page d'accueil`}</span>
+                          <span>Page d'accueil</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
@@ -287,7 +287,7 @@ export default function ServicesPage() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
-                          <span>{`Panier d'achat`}</span>
+                          <span>Panier d'achat</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
@@ -532,7 +532,7 @@ export default function ServicesPage() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
-                          <span>{`Analyse de l'existant`}</span>
+                          <span>Analyse de l'existant</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
