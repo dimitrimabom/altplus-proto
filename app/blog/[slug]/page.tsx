@@ -1,5 +1,3 @@
-"use client"
-
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -22,27 +20,26 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { TableOfContents } from "@/components/table-of-contents";
 import { CommentItem } from "@/components/comment-item";
-import Image from "next/image.js";
-
+import Image from "next/image";
 
 // Cette fonction serait remplacée par une véritable fonction de récupération de données
 const articles = [
-    {
-      slug: "tendances-web-2025",
-      title: "10 tendances web à suivre en 2025",
-      description:
-        "Découvrez les dernières tendances en matière de design et de développement web pour rester à la pointe.",
-      date: "15 mai 2025",
-      readTime: "5 min",
-      author: {
-        name: "Sophie Martin",
-        role: "Lead Designer",
-        avatar: "SM",
-      },
-      image: "/placeholder.svg?height=600&width=1200&text=Tendances+Web+2025",
-      category: "Design",
-      tags: ["Design", "Tendances", "UX/UI", "Développement"],
-      content: `
+  {
+    slug: "tendances-web-2025",
+    title: "10 tendances web à suivre en 2025",
+    description:
+      "Découvrez les dernières tendances en matière de design et de développement web pour rester à la pointe.",
+    date: "15 mai 2025",
+    readTime: "5 min",
+    author: {
+      name: "Sophie Martin",
+      role: "Lead Designer",
+      avatar: "SM",
+    },
+    image: "/placeholder.svg?height=600&width=1200&text=Tendances+Web+2025",
+    category: "Design",
+    tags: ["Design", "Tendances", "UX/UI", "Développement"],
+    content: `
 ## Introduction
 
 Le monde du web évolue constamment, et il est essentiel pour les professionnels du digital de rester à jour avec les dernières tendances et technologies. En 2025, plusieurs innovations majeures façonnent la manière dont nous concevons et développons les sites web. Cet article explore les dix tendances les plus significatives qui définissent l'avenir du web.
@@ -103,70 +100,70 @@ Les tendances web de 2025 reflètent un écosystème numérique en constante év
 
 Restez à l'affût de ces tendances et n'hésitez pas à expérimenter avec ces nouvelles approches pour garder votre présence web à la pointe de l'innovation.
       `,
-      tableOfContents: [
-        { id: "introduction", title: "Introduction", level: 2 },
-        {
-          id: "1-design-immersif-et-réalité-augmentée",
-          title: "1. Design Immersif et Réalité Augmentée",
-          level: 2,
-        },
-        {
-          id: "2-interface-conversationnelle-et-chatbots-ia",
-          title: "2. Interface Conversationnelle et Chatbots IA",
-          level: 2,
-        },
-        {
-          id: "3-design-éco-responsable",
-          title: "3. Design Éco-responsable",
-          level: 2,
-        },
-        {
-          id: "4-micro-animations-et-interactions-subtiles",
-          title: "4. Micro-animations et Interactions Subtiles",
-          level: 2,
-        },
-        {
-          id: "5-conception-sans-code-et-ia-générative",
-          title: "5. Conception Sans Code et IA Générative",
-          level: 2,
-        },
-        { id: "conclusion", title: "Conclusion", level: 2 },
-      ],
-      relatedArticles: [
-        {
-          title: "L'importance du responsive design",
-          slug: "importance-responsive-design",
-          image: "/placeholder.svg?height=200&width=300&text=Responsive+Design",
-        },
-        {
-          title: "Comment améliorer la vitesse de chargement de votre site",
-          slug: "ameliorer-vitesse-chargement",
-          image: "/placeholder.svg?height=200&width=300&text=Performance",
-        },
-        {
-          title: "Les bases du SEO pour votre site web",
-          slug: "bases-seo-site-web",
-          image: "/placeholder.svg?height=200&width=300&text=SEO",
-        },
-      ],
-    },
-    {
-      slug: "ameliorer-vitesse-chargement",
-      title: "Comment améliorer la vitesse de chargement de votre site",
-      description:
-        "Des conseils pratiques pour optimiser les performances de votre site web et améliorer l'expérience utilisateur.",
-      date: "3 mai 2025",
-      readTime: "7 min",
-      author: {
-        name: "Thomas Dupont",
-        role: "Lead Developer",
-        avatar: "TD",
+    tableOfContents: [
+      { id: "introduction", title: "Introduction", level: 2 },
+      {
+        id: "1-design-immersif-et-réalité-augmentée",
+        title: "1. Design Immersif et Réalité Augmentée",
+        level: 2,
       },
-      image:
-        "/placeholder.svg?height=600&width=1200&text=Optimisation+Performance",
-      category: "Développement",
-      tags: ["Performance", "Optimisation", "UX", "Développement"],
-      content: `
+      {
+        id: "2-interface-conversationnelle-et-chatbots-ia",
+        title: "2. Interface Conversationnelle et Chatbots IA",
+        level: 2,
+      },
+      {
+        id: "3-design-éco-responsable",
+        title: "3. Design Éco-responsable",
+        level: 2,
+      },
+      {
+        id: "4-micro-animations-et-interactions-subtiles",
+        title: "4. Micro-animations et Interactions Subtiles",
+        level: 2,
+      },
+      {
+        id: "5-conception-sans-code-et-ia-générative",
+        title: "5. Conception Sans Code et IA Générative",
+        level: 2,
+      },
+      { id: "conclusion", title: "Conclusion", level: 2 },
+    ],
+    relatedArticles: [
+      {
+        title: "L'importance du responsive design",
+        slug: "importance-responsive-design",
+        image: "/placeholder.svg?height=200&width=300&text=Responsive+Design",
+      },
+      {
+        title: "Comment améliorer la vitesse de chargement de votre site",
+        slug: "ameliorer-vitesse-chargement",
+        image: "/placeholder.svg?height=200&width=300&text=Performance",
+      },
+      {
+        title: "Les bases du SEO pour votre site web",
+        slug: "bases-seo-site-web",
+        image: "/placeholder.svg?height=200&width=300&text=SEO",
+      },
+    ],
+  },
+  {
+    slug: "ameliorer-vitesse-chargement",
+    title: "Comment améliorer la vitesse de chargement de votre site",
+    description:
+      "Des conseils pratiques pour optimiser les performances de votre site web et améliorer l'expérience utilisateur.",
+    date: "3 mai 2025",
+    readTime: "7 min",
+    author: {
+      name: "Thomas Dupont",
+      role: "Lead Developer",
+      avatar: "TD",
+    },
+    image:
+      "/placeholder.svg?height=600&width=1200&text=Optimisation+Performance",
+    category: "Développement",
+    tags: ["Performance", "Optimisation", "UX", "Développement"],
+    content: `
 ## Introduction
 
 La vitesse de chargement d'un site web est aujourd'hui un facteur crucial pour le succès de votre présence en ligne. Un site lent peut considérablement augmenter le taux de rebond, nuire à l'expérience utilisateur et même affecter votre référencement. Dans cet article, nous explorerons des techniques concrètes pour améliorer la performance de votre site et offrir une expérience fluide à vos visiteurs.
@@ -250,76 +247,76 @@ Utilisez des outils comme Lighthouse, WebPageTest ou GTmetrix pour analyser rég
 
 N'oubliez pas que chaque milliseconde compte dans l'expérience utilisateur moderne!
       `,
-      tableOfContents: [
-        { id: "introduction", title: "Introduction", level: 2 },
-        {
-          id: "limportance-de-la-vitesse-de-chargement",
-          title: "L'importance de la vitesse de chargement",
-          level: 2,
-        },
-        {
-          id: "optimisation-des-images",
-          title: "Optimisation des images",
-          level: 2,
-        },
-        { id: "formats-modernes", title: "Formats modernes", level: 3 },
-        {
-          id: "dimensionnement-adaptatif",
-          title: "Dimensionnement adaptatif",
-          level: 3,
-        },
-        {
-          id: "chargement-différé-lazy-loading",
-          title: "Chargement différé (lazy loading)",
-          level: 3,
-        },
-        {
-          id: "minification-et-compression",
-          title: "Minification et compression",
-          level: 2,
-        },
-        { id: "mise-en-cache", title: "Mise en cache", level: 2 },
-        {
-          id: "chargement-critique-prioritaire",
-          title: "Chargement critique prioritaire",
-          level: 2,
-        },
-        { id: "conclusion", title: "Conclusion", level: 2 },
-      ],
-      relatedArticles: [
-        {
-          title: "10 tendances web à suivre en 2025",
-          slug: "tendances-web-2025",
-          image: "/placeholder.svg?height=200&width=300&text=Tendances+Web",
-        },
-        {
-          title: "L'importance du responsive design",
-          slug: "importance-responsive-design",
-          image: "/placeholder.svg?height=200&width=300&text=Responsive+Design",
-        },
-        {
-          title: "Les meilleures pratiques pour l'accessibilité web",
-          slug: "meilleures-pratiques-accessibilite",
-          image: "/placeholder.svg?height=200&width=300&text=Accessibilité",
-        },
-      ],
-    },
-    {
-      slug: "importance-responsive-design",
-      title: "L'importance du responsive design",
-      description:
-        "Pourquoi il est crucial d'avoir un site web qui s'adapte à tous les appareils et comment y parvenir.",
-      date: "28 avril 2025",
-      readTime: "6 min",
-      author: {
-        name: "Emma Laurent",
-        role: "UX Designer",
-        avatar: "EL",
+    tableOfContents: [
+      { id: "introduction", title: "Introduction", level: 2 },
+      {
+        id: "limportance-de-la-vitesse-de-chargement",
+        title: "L'importance de la vitesse de chargement",
+        level: 2,
       },
-      image: "/placeholder.svg?height=600&width=1200&text=Responsive+Design",
-      category: "Design",
-      tags: ["Responsive", "Mobile", "Design", "UX/UI"],
-      content: `
+      {
+        id: "optimisation-des-images",
+        title: "Optimisation des images",
+        level: 2,
+      },
+      { id: "formats-modernes", title: "Formats modernes", level: 3 },
+      {
+        id: "dimensionnement-adaptatif",
+        title: "Dimensionnement adaptatif",
+        level: 3,
+      },
+      {
+        id: "chargement-différé-lazy-loading",
+        title: "Chargement différé (lazy loading)",
+        level: 3,
+      },
+      {
+        id: "minification-et-compression",
+        title: "Minification et compression",
+        level: 2,
+      },
+      { id: "mise-en-cache", title: "Mise en cache", level: 2 },
+      {
+        id: "chargement-critique-prioritaire",
+        title: "Chargement critique prioritaire",
+        level: 2,
+      },
+      { id: "conclusion", title: "Conclusion", level: 2 },
+    ],
+    relatedArticles: [
+      {
+        title: "10 tendances web à suivre en 2025",
+        slug: "tendances-web-2025",
+        image: "/placeholder.svg?height=200&width=300&text=Tendances+Web",
+      },
+      {
+        title: "L'importance du responsive design",
+        slug: "importance-responsive-design",
+        image: "/placeholder.svg?height=200&width=300&text=Responsive+Design",
+      },
+      {
+        title: "Les meilleures pratiques pour l'accessibilité web",
+        slug: "meilleures-pratiques-accessibilite",
+        image: "/placeholder.svg?height=200&width=300&text=Accessibilité",
+      },
+    ],
+  },
+  {
+    slug: "importance-responsive-design",
+    title: "L'importance du responsive design",
+    description:
+      "Pourquoi il est crucial d'avoir un site web qui s'adapte à tous les appareils et comment y parvenir.",
+    date: "28 avril 2025",
+    readTime: "6 min",
+    author: {
+      name: "Emma Laurent",
+      role: "UX Designer",
+      avatar: "EL",
+    },
+    image: "/placeholder.svg?height=600&width=1200&text=Responsive+Design",
+    category: "Design",
+    tags: ["Responsive", "Mobile", "Design", "UX/UI"],
+    content: `
 ## Introduction
 
 Dans un monde où la navigation internet se fait sur une multitude d'appareils aux tailles d'écran variées, le responsive design n'est plus une option, mais une nécessité absolue. Cet article explore l'importance cruciale d'adopter une approche responsive pour votre site web et fournit des conseils pratiques pour y parvenir efficacement.
@@ -423,81 +420,80 @@ Le responsive design n'est plus une tendance passagère mais une nécessité abs
 
 Investir dans un design responsive aujourd'hui, c'est s'assurer que votre site reste pertinent et efficace pour les années à venir, quel que soit l'évolution des appareils et des habitudes de navigation.
       `,
-      tableOfContents: [
-        { id: "introduction", title: "Introduction", level: 2 },
-        {
-          id: "quest-ce-que-le-responsive-design",
-          title: "Qu'est-ce que le responsive design ?",
-          level: 2,
-        },
-        {
-          id: "pourquoi-le-responsive-design-est-il-si-important",
-          title: "Pourquoi le responsive design est-il si important ?",
-          level: 2,
-        },
-        {
-          id: "évolution-des-habitudes-de-navigation",
-          title: "Évolution des habitudes de navigation",
-          level: 3,
-        },
-        {
-          id: "impact-sur-le-référencement",
-          title: "Impact sur le référencement",
-          level: 3,
-        },
-        {
-          id: "expérience-utilisateur-et-taux-de-conversion",
-          title: "Expérience utilisateur et taux de conversion",
-          level: 3,
-        },
-        {
-          id: "principes-clés-du-responsive-design",
-          title: "Principes clés du responsive design",
-          level: 2,
-        },
-        {
-          id: "design-fluide-et-flexible",
-          title: "Design fluide et flexible",
-          level: 3,
-        },
-        { id: "media-queries", title: "Media queries", level: 3 },
-        {
-          id: "images-et-médias-responsives",
-          title: "Images et médias responsives",
-          level: 3,
-        },
-        {
-          id: "approche-mobile-first",
-          title: 'Approche "Mobile First"',
-          level: 3,
-        },
-        {
-          id: "bonnes-pratiques-pour-une-mise-en-œuvre-efficace",
-          title: "Bonnes pratiques pour une mise en œuvre efficace",
-          level: 2,
-        },
-        { id: "conclusion", title: "Conclusion", level: 2 },
-      ],
-      relatedArticles: [
-        {
-          title: "10 tendances web à suivre en 2025",
-          slug: "tendances-web-2025",
-          image: "/placeholder.svg?height=200&width=300&text=Tendances+Web",
-        },
-        {
-          title: "Comment améliorer la vitesse de chargement de votre site",
-          slug: "ameliorer-vitesse-chargement",
-          image: "/placeholder.svg?height=200&width=300&text=Performance",
-        },
-        {
-          title: "Les meilleures pratiques pour l'accessibilité web",
-          slug: "meilleures-pratiques-accessibilite",
-          image: "/placeholder.svg?height=200&width=300&text=Accessibilité",
-        },
-      ],
-    },
-  ];
-
+    tableOfContents: [
+      { id: "introduction", title: "Introduction", level: 2 },
+      {
+        id: "quest-ce-que-le-responsive-design",
+        title: "Qu'est-ce que le responsive design ?",
+        level: 2,
+      },
+      {
+        id: "pourquoi-le-responsive-design-est-il-si-important",
+        title: "Pourquoi le responsive design est-il si important ?",
+        level: 2,
+      },
+      {
+        id: "évolution-des-habitudes-de-navigation",
+        title: "Évolution des habitudes de navigation",
+        level: 3,
+      },
+      {
+        id: "impact-sur-le-référencement",
+        title: "Impact sur le référencement",
+        level: 3,
+      },
+      {
+        id: "expérience-utilisateur-et-taux-de-conversion",
+        title: "Expérience utilisateur et taux de conversion",
+        level: 3,
+      },
+      {
+        id: "principes-clés-du-responsive-design",
+        title: "Principes clés du responsive design",
+        level: 2,
+      },
+      {
+        id: "design-fluide-et-flexible",
+        title: "Design fluide et flexible",
+        level: 3,
+      },
+      { id: "media-queries", title: "Media queries", level: 3 },
+      {
+        id: "images-et-médias-responsives",
+        title: "Images et médias responsives",
+        level: 3,
+      },
+      {
+        id: "approche-mobile-first",
+        title: 'Approche "Mobile First"',
+        level: 3,
+      },
+      {
+        id: "bonnes-pratiques-pour-une-mise-en-œuvre-efficace",
+        title: "Bonnes pratiques pour une mise en œuvre efficace",
+        level: 2,
+      },
+      { id: "conclusion", title: "Conclusion", level: 2 },
+    ],
+    relatedArticles: [
+      {
+        title: "10 tendances web à suivre en 2025",
+        slug: "tendances-web-2025",
+        image: "/placeholder.svg?height=200&width=300&text=Tendances+Web",
+      },
+      {
+        title: "Comment améliorer la vitesse de chargement de votre site",
+        slug: "ameliorer-vitesse-chargement",
+        image: "/placeholder.svg?height=200&width=300&text=Performance",
+      },
+      {
+        title: "Les meilleures pratiques pour l'accessibilité web",
+        slug: "meilleures-pratiques-accessibilite",
+        image: "/placeholder.svg?height=200&width=300&text=Accessibilité",
+      },
+    ],
+  },
+];
 
 function formatDate(dateString: string) {
   const options: Intl.DateTimeFormatOptions = {
@@ -538,25 +534,14 @@ function markdownToHtml(markdown: string) {
   return html;
 }
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
 
-const Page = ({ params }: PageProps) => {
-  const { slug } = params;
+export default async function Page(props: {
+  params: Promise<{ slug: string }>;
+}) {
+  // Attendre la résolution de params
+  const { slug } = await props.params;
 
-  console.log("Slug:", slug);
-  console.log("Articles:", articles);
-  
-  
   // Rechercher l'article correspondant au slug
-  articles.map((article) => {
-    if (article.slug === slug) {
-      return article;
-    }
-  });
   const article = articles.find((article) => article.slug === slug);
 
   if (!article) {
@@ -587,11 +572,11 @@ const Page = ({ params }: PageProps) => {
               <Link href="/" className="hover:text-foreground">
                 Accueil
               </Link>
-              <span className="mx-2">/</span>
+              <span className="mx-2"> / </span>
               <Link href="/blog" className="hover:text-foreground">
                 Blog
               </Link>
-              <span className="mx-2">/</span>
+              <span className="mx-2"> / </span>
               <span className="truncate max-w-[200px]">{article.title}</span>
             </nav>
           </div>
@@ -1015,6 +1000,4 @@ const Page = ({ params }: PageProps) => {
       </div>
     </div>
   );
-};
-
-export default Page;
+}
