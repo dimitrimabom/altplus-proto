@@ -29,6 +29,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image.js";
 
 export default function EcommercePage() {
   return (
@@ -58,7 +59,7 @@ export default function EcommercePage() {
             </Button>
           </div>
           <div className="mt-16 w-full max-w-5xl rounded-lg border bg-card/50 p-4 shadow-sm">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200&text=Boutique+E-commerce"
               alt="Exemple de boutique e-commerce"
               className="w-full rounded-md object-cover"
@@ -103,7 +104,7 @@ export default function EcommercePage() {
             <Card>
               <CardHeader className="pb-2">
                 <ShoppingCart className="h-10 w-10 text-primary mb-2" />
-                <CardTitle>Expérience d'achat fluide</CardTitle>
+                <CardTitle>{`Expérience d'achat fluide`}</CardTitle>
                 <CardDescription>
                   Un parcours d'achat optimisé pour maximiser les conversions et
                   minimiser les abandons de panier.
@@ -111,7 +112,7 @@ export default function EcommercePage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>Panier d'achat intuitif</li>
+                  <li>{`Panier d'achat intuitif`}</li>
                   <li>Processus de commande simplifié</li>
                   <li>Création de compte facilitée</li>
                   <li>Sauvegarde du panier</li>
@@ -209,7 +210,7 @@ export default function EcommercePage() {
           <div className="mt-16 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=WC"
                   alt="WooCommerce"
                   className="h-10 w-10"
@@ -225,7 +226,7 @@ export default function EcommercePage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Shopify"
                   alt="Shopify"
                   className="h-10 w-10"
@@ -241,7 +242,7 @@ export default function EcommercePage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Magento"
                   alt="Magento"
                   className="h-10 w-10"
@@ -257,7 +258,7 @@ export default function EcommercePage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=PS"
                   alt="PrestaShop"
                   className="h-10 w-10"
@@ -273,7 +274,7 @@ export default function EcommercePage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Sylius"
                   alt="Sylius"
                   className="h-10 w-10"
@@ -289,7 +290,7 @@ export default function EcommercePage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Next.js"
                   alt="Next.js Commerce"
                   className="h-10 w-10"
@@ -306,7 +307,7 @@ export default function EcommercePage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Swell"
                   alt="Swell"
                   className="h-10 w-10"
@@ -322,7 +323,7 @@ export default function EcommercePage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Custom"
                   alt="Solution sur mesure"
                   className="h-10 w-10"
@@ -392,7 +393,7 @@ export default function EcommercePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Analyse+des+besoins"
                       alt="Phase d'analyse des besoins"
                       className="rounded-lg shadow-md"
@@ -427,12 +428,12 @@ export default function EcommercePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Plan d'acquisition et de fidélisation</span>
+                        <span>{`Plan d'acquisition et de fidélisation`}</span>
                       </li>
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Stratégie+e-commerce"
                       alt="Phase de stratégie e-commerce"
                       className="rounded-lg shadow-md"
@@ -464,7 +465,7 @@ export default function EcommercePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Optimisation du parcours d'achat</span>
+                        <span>{`Optimisation du parcours d'achat`}</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -473,7 +474,7 @@ export default function EcommercePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Design+e-commerce"
                       alt="Phase de design"
                       className="rounded-lg shadow-md"
@@ -515,7 +516,7 @@ export default function EcommercePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Développement+e-commerce"
                       alt="Phase de développement"
                       className="rounded-lg shadow-md"
@@ -555,7 +556,7 @@ export default function EcommercePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Tests+e-commerce"
                       alt="Phase de tests"
                       className="rounded-lg shadow-md"
@@ -582,11 +583,11 @@ export default function EcommercePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Formation à l'administration</span>
+                        <span>{`Formation à l'administration`}</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Mise en place d'outils d'analyse</span>
+                        <span>{`Mise en place d'outils d'analyse`}</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -595,7 +596,7 @@ export default function EcommercePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Lancement+e-commerce"
                       alt="Phase de lancement"
                       className="rounded-lg shadow-md"
@@ -625,7 +626,7 @@ export default function EcommercePage() {
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=EcoStore"
                   alt="EcoStore - Boutique de produits écologiques"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -657,7 +658,7 @@ export default function EcommercePage() {
             </Card>
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=ModaStyle"
                   alt="ModaStyle - Boutique de mode"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -689,7 +690,7 @@ export default function EcommercePage() {
             </Card>
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=Luxury+Brand"
                   alt="Luxury Brand - Boutique de luxe"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"

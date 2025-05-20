@@ -15,6 +15,7 @@ import { Testimonials } from "@/components/testimonials";
 import { BlogPreview } from "@/components/blog-preview";
 import { useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
+import Image from "next/image.js";
 
 export default function Home() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -132,7 +133,7 @@ export default function Home() {
             </Button>
           </div>
           {/* <div className="mt-16 w-full max-w-5xl rounded-lg border bg-card/50 p-4 shadow-sm">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200"
               alt="Aperçu de site web"
               className="w-full rounded-md object-cover"
@@ -189,7 +190,7 @@ export default function Home() {
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm">
                   <li>Catalogue de produits</li>
-                  <li>Panier d'achat sécurisé</li>
+                  <li>{`Panier d'achat sécurisé`}</li>
                   <li>Passerelles de paiement</li>
                   <li>Gestion des stocks</li>
                 </ul>
@@ -296,7 +297,7 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400"
                       alt="Phase de découverte"
                       className="rounded-lg shadow-md"
@@ -332,7 +333,7 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400"
                       alt="Phase de design"
                       className="rounded-lg shadow-md"
@@ -368,7 +369,7 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400"
                       alt="Phase de développement"
                       className="rounded-lg shadow-md"
@@ -395,7 +396,7 @@ export default function Home() {
                       </li>
                       <li className="flex items-center gap-2">
                         <Users className="h-5 w-5 text-primary" />
-                        <span>Formation à l'utilisation</span>
+                        <span>{`Formation à l'utilisation`}</span>
                       </li>
                       <li className="flex items-center gap-2">
                         <Globe className="h-5 w-5 text-primary" />
@@ -404,7 +405,7 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400"
                       alt="Phase de lancement"
                       className="rounded-lg shadow-md"

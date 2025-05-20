@@ -82,7 +82,7 @@ export function CommentItem({
               onClick={handleLike}
             >
               <ThumbsUp className="mr-1 h-4 w-4" />
-              <span>{liked ? "Aimé" : "J'aime"}</span>
+              <span>{`{liked ? "Aimé" : "J'aime"}`}</span>
               {likeCount > 0 && <span className="ml-1">({likeCount})</span>}
             </Button>
             <Button
@@ -178,7 +178,7 @@ export function CommentItem({
                   <div className="flex space-x-4">
                     <Button variant="ghost" size="sm" className="h-auto p-0">
                       <ThumbsUp className="mr-1 h-4 w-4" />
-                      <span>J'aime</span>
+                      <span>{`J'aime`}</span>
                     </Button>
                     <Button variant="ghost" size="sm" className="h-auto p-0">
                       <MessageSquare className="mr-1 h-4 w-4" />

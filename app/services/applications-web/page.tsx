@@ -28,6 +28,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image.js";
 
 export default function ApplicationsWebPage() {
   return (
@@ -60,7 +61,7 @@ export default function ApplicationsWebPage() {
             </Button>
           </div>
           <div className="mt-16 w-full max-w-5xl rounded-lg border bg-card/50 p-4 shadow-sm">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200&text=Application+Web+Professionnelle"
               alt="Exemple d'application web"
               className="w-full rounded-md object-cover"
@@ -97,7 +98,7 @@ export default function ApplicationsWebPage() {
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                   <li>Analyse approfondie de vos besoins</li>
-                  <li>Solutions adaptées à votre secteur d'activité</li>
+                  <li>{`Solutions adaptées à votre secteur d'activité`}</li>
                   <li>Fonctionnalités spécifiques à votre métier</li>
                   <li>Architecture logicielle robuste</li>
                 </ul>
@@ -114,7 +115,7 @@ export default function ApplicationsWebPage() {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
-                  <li>Design centré sur l'utilisateur</li>
+                  <li>{`Design centré sur l'utilisateur`}</li>
                   <li>Navigation fluide et intuitive</li>
                   <li>Tableaux de bord personnalisables</li>
                   <li>Responsive sur tous les appareils</li>
@@ -212,7 +213,7 @@ export default function ApplicationsWebPage() {
           <div className="mt-16 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=React"
                   alt="React"
                   className="h-10 w-10"
@@ -228,7 +229,7 @@ export default function ApplicationsWebPage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Next.js"
                   alt="Next.js"
                   className="h-10 w-10"
@@ -244,7 +245,7 @@ export default function ApplicationsWebPage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Node.js"
                   alt="Node.js"
                   className="h-10 w-10"
@@ -260,7 +261,7 @@ export default function ApplicationsWebPage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=TypeScript"
                   alt="TypeScript"
                   className="h-10 w-10"
@@ -276,7 +277,7 @@ export default function ApplicationsWebPage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=PostgreSQL"
                   alt="PostgreSQL"
                   className="h-10 w-10"
@@ -292,7 +293,7 @@ export default function ApplicationsWebPage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=MongoDB"
                   alt="MongoDB"
                   className="h-10 w-10"
@@ -307,7 +308,7 @@ export default function ApplicationsWebPage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=Docker"
                   alt="Docker"
                   className="h-10 w-10"
@@ -323,7 +324,7 @@ export default function ApplicationsWebPage() {
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <img
+                <Image
                   src="/placeholder.svg?height=40&width=40&text=AWS"
                   alt="AWS"
                   className="h-10 w-10"
@@ -393,7 +394,7 @@ export default function ApplicationsWebPage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Analyse+des+besoins"
                       alt="Phase d'analyse des besoins"
                       className="rounded-lg shadow-md"
@@ -430,12 +431,12 @@ export default function ApplicationsWebPage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Planification de l'infrastructure</span>
+                        <span>{`Planification de l'infrastructure`}</span>
                       </li>
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Architecture+technique"
                       alt="Phase d'architecture technique"
                       className="rounded-lg shadow-md"
@@ -476,7 +477,7 @@ export default function ApplicationsWebPage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Design+UI/UX"
                       alt="Phase de design UI/UX"
                       className="rounded-lg shadow-md"
@@ -515,7 +516,7 @@ export default function ApplicationsWebPage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Développement+agile"
                       alt="Phase de développement"
                       className="rounded-lg shadow-md"
@@ -539,7 +540,7 @@ export default function ApplicationsWebPage() {
                     <ul className="mt-4 space-y-2">
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Tests unitaires et d'intégration</span>
+                        <span>{`Tests unitaires et d'intégration`}</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -556,7 +557,7 @@ export default function ApplicationsWebPage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Tests+et+QA"
                       alt="Phase de tests"
                       className="rounded-lg shadow-md"
@@ -597,7 +598,7 @@ export default function ApplicationsWebPage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Déploiement"
                       alt="Phase de déploiement"
                       className="rounded-lg shadow-md"
@@ -627,7 +628,7 @@ export default function ApplicationsWebPage() {
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <Card>
               <CardHeader>
-                <CardTitle>Gestion d'entreprise</CardTitle>
+                <CardTitle>{`Gestion d'entreprise`}</CardTitle>
                 <CardDescription>
                   Applications de gestion interne pour optimiser vos processus
                   métier.
@@ -708,8 +709,8 @@ export default function ApplicationsWebPage() {
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                   <li>Applications pour la santé</li>
-                  <li>Solutions pour l'immobilier</li>
-                  <li>Outils pour l'éducation</li>
+                  <li>{`Solutions pour l'immobilier`}</li>
+                  <li>{`Outils pour l'éducation`}</li>
                   <li>Applications pour la finance</li>
                 </ul>
               </CardContent>
@@ -788,7 +789,7 @@ export default function ApplicationsWebPage() {
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=TechDashboard"
                   alt="TechDashboard - Application de gestion de projets"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -820,7 +821,7 @@ export default function ApplicationsWebPage() {
             </Card>
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=FoodExpress"
                   alt="FoodExpress - Plateforme de livraison de repas"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -852,7 +853,7 @@ export default function ApplicationsWebPage() {
             </Card>
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=MedConnect"
                   alt="MedConnect - Portail patient pour centre médical"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"

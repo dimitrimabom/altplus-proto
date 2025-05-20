@@ -80,7 +80,7 @@ export function ProjectDialog({ project, onClose, open }: ProjectDialogProps) {
 
         {/* Image Gallery */}
         <div className="relative mt-4 aspect-video w-full overflow-hidden rounded-lg bg-muted">
-          <img
+          <Image
             src={project.gallery[currentImageIndex] || "/placeholder.svg"}
             alt={`${project.title} - Image ${currentImageIndex + 1}`}
             className="h-full w-full object-cover"

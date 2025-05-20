@@ -118,7 +118,7 @@ export default function BlogPage() {
                         <div className="grid gap-4 md:grid-cols-[1fr_2fr]">
                           <CardHeader className="p-4">
                             <div className="aspect-video w-full overflow-hidden rounded-lg bg-muted">
-                              <img
+                              <Image
                                 src={`/placeholder.svg?height=200&width=400&text=Blog`}
                                 alt={post.title}
                                 className="h-full w-full object-cover"
@@ -186,7 +186,7 @@ export default function BlogPage() {
                   {posts.slice(0, 3).map((post, index) => (
                     <li key={index} className="flex gap-3">
                       <div className="h-16 w-16 flex-none overflow-hidden rounded-md bg-muted">
-                        <img
+                        <Image
                           src={`/placeholder.svg?height=64&width=64&text=${
                             index + 1
                           }`}
@@ -216,7 +216,7 @@ export default function BlogPage() {
                 </p>
                 <div className="mt-4 space-y-2">
                   <Input placeholder="Votre email" type="email" />
-                  <Button className="w-full">S'abonner</Button>
+                  <Button className="w-full">{`S'abonner`}</Button>
                 </div>
               </div>
             </div>

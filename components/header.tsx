@@ -16,7 +16,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between max-w-7xl">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl font-bold text-primary font-bold">
+            <span className="text-2xl font-bold text-primary">
               Alt<span className="text-foreground">Plus</span>
             </span>
           </Link>
@@ -87,7 +87,7 @@ export function Header() {
         <div className="px-4 fixed inset-0 z-50 bg-background md:hidden">
           <div className="container flex h-16 items-center justify-between ">
             <Link href="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-primary font-bold">
+              <span className="text-2xl font-bold text-primary">
                 Alt<span className="text-foreground">Plus</span>
               </span>
             </Link>

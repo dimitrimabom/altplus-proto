@@ -27,6 +27,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image.js";
 
 export default function RefontePage() {
   return (
@@ -56,7 +57,7 @@ export default function RefontePage() {
             </Button>
           </div>
           <div className="mt-16 w-full max-w-5xl rounded-lg border bg-card/50 p-4 shadow-sm">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200&text=Refonte+Site+Web"
               alt="Exemple de refonte de site web"
               className="w-full rounded-md object-cover"
@@ -184,7 +185,7 @@ export default function RefontePage() {
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                   <li>Conformité aux normes WCAG</li>
                   <li>Navigation au clavier</li>
-                  <li>Compatibilité avec les lecteurs d'écran</li>
+                  <li>{`Compatibilité avec les lecteurs d'écran`}</li>
                   <li>Contrastes et lisibilité optimisés</li>
                 </ul>
               </CardContent>
@@ -241,12 +242,12 @@ export default function RefontePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Analyse de l'expérience utilisateur</span>
+                        <span>{`Analyse de l'expérience utilisateur`}</span>
                       </li>
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Audit+de+site"
                       alt="Phase d'audit"
                       className="rounded-lg shadow-md"
@@ -278,7 +279,7 @@ export default function RefontePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Planification de l'architecture</span>
+                        <span>{`Planification de l'architecture`}</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -287,7 +288,7 @@ export default function RefontePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Stratégie+de+refonte"
                       alt="Phase de stratégie"
                       className="rounded-lg shadow-md"
@@ -328,7 +329,7 @@ export default function RefontePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Design+UX/UI"
                       alt="Phase de design"
                       className="rounded-lg shadow-md"
@@ -369,7 +370,7 @@ export default function RefontePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Développement"
                       alt="Phase de développement"
                       className="rounded-lg shadow-md"
@@ -403,12 +404,12 @@ export default function RefontePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Vérification de l'intégrité des données</span>
+                        <span>{`Vérification de l'intégrité des données`}</span>
                       </li>
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Migration+de+contenu"
                       alt="Phase de migration"
                       className="rounded-lg shadow-md"
@@ -434,7 +435,7 @@ export default function RefontePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Formation à l'utilisation</span>
+                        <span>{`Formation à l'utilisation`}</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -447,7 +448,7 @@ export default function RefontePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Lancement+du+site"
                       alt="Phase de lancement"
                       className="rounded-lg shadow-md"
@@ -484,7 +485,7 @@ export default function RefontePage() {
                     <div className="absolute left-4 top-4 rounded-full bg-red-500 px-3 py-1 text-xs font-medium text-white">
                       Avant
                     </div>
-                    <img
+                    <Image
                       src="/placeholder.svg?height=400&width=600&text=Site+Avant+Refonte"
                       alt="Site web avant refonte"
                       className="w-full rounded-md"
@@ -522,7 +523,7 @@ export default function RefontePage() {
                     <div className="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
                       Après
                     </div>
-                    <img
+                    <Image
                       src="/placeholder.svg?height=400&width=600&text=Site+Après+Refonte"
                       alt="Site web après refonte"
                       className="w-full rounded-md"
@@ -568,7 +569,7 @@ export default function RefontePage() {
                     <div className="absolute left-4 top-4 rounded-full bg-red-500 px-3 py-1 text-xs font-medium text-white">
                       Avant
                     </div>
-                    <img
+                    <Image
                       src="/placeholder.svg?height=400&width=600&text=E-commerce+Avant"
                       alt="Site e-commerce avant refonte"
                       className="w-full rounded-md"
@@ -608,7 +609,7 @@ export default function RefontePage() {
                     <div className="absolute left-4 top-4 rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
                       Après
                     </div>
-                    <img
+                    <Image
                       src="/placeholder.svg?height=400&width=600&text=E-commerce+Après"
                       alt="Site e-commerce après refonte"
                       className="w-full rounded-md"
@@ -622,7 +623,7 @@ export default function RefontePage() {
                   <ul className="space-y-1 text-sm text-muted-foreground">
                     <li className="flex items-start">
                       <span className="mr-2 text-primary">•</span>
-                      <span>Tunnel d'achat simplifié et optimisé</span>
+                      <span>{`Tunnel d'achat simplifié et optimisé`}</span>
                     </li>
                     <li className="flex items-start">
                       <span className="mr-2 text-primary">•</span>
@@ -663,7 +664,7 @@ export default function RefontePage() {
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=Luxury+Brand"
                   alt="Luxury Brand - Refonte pour une marque de luxe"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -695,7 +696,7 @@ export default function RefontePage() {
             </Card>
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=Centre+Médical"
                   alt="Centre Médical - Refonte pour une clinique"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -727,7 +728,7 @@ export default function RefontePage() {
             </Card>
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=TechCorp"
                   alt="TechCorp - Refonte pour une entreprise technologique"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"

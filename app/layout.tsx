@@ -6,7 +6,11 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap", // ou "optional"
+  preload: false, // facultatif, évite les requêtes réseau si tu es offline
+});
 
 export const metadata: Metadata = {
   title: "AltPlus - Création de Sites Web Professionnels",

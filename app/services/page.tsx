@@ -20,6 +20,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Image from "next/image.js";
 
 export default function ServicesPage() {
   return (
@@ -105,7 +106,7 @@ export default function ServicesPage() {
                 <div className="flex items-center justify-center">
                   <div className="relative w-full max-w-md">
                     <div className="absolute -left-4 -top-4 h-72 w-72 rounded-lg bg-primary/10"></div>
-                    <img
+                    <Image
                       src="/placeholder.svg?height=500&width=500&text=Site+Vitrine"
                       alt="Exemple de site vitrine"
                       className="relative z-10 w-full rounded-lg border shadow-lg"
@@ -152,7 +153,7 @@ export default function ServicesPage() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
-                          <span>Page d'accueil</span>
+                          <span>{`Page d'accueil`}</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
@@ -239,7 +240,7 @@ export default function ServicesPage() {
                 <div className="flex items-center justify-center">
                   <div className="relative w-full max-w-md">
                     <div className="absolute -left-4 -top-4 h-72 w-72 rounded-lg bg-primary/10"></div>
-                    <img
+                    <Image
                       src="/placeholder.svg?height=500&width=500&text=E-commerce"
                       alt="Exemple de site e-commerce"
                       className="relative z-10 w-full rounded-lg border shadow-lg"
@@ -286,7 +287,7 @@ export default function ServicesPage() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
-                          <span>Panier d'achat</span>
+                          <span>{`Panier d'achat`}</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
@@ -373,7 +374,7 @@ export default function ServicesPage() {
                 <div className="flex items-center justify-center">
                   <div className="relative w-full max-w-md">
                     <div className="absolute -left-4 -top-4 h-72 w-72 rounded-lg bg-primary/10"></div>
-                    <img
+                    <Image
                       src="/placeholder.svg?height=500&width=500&text=Application+Web"
                       alt="Exemple d'application web"
                       className="relative z-10 w-full rounded-lg border shadow-lg"
@@ -507,7 +508,7 @@ export default function ServicesPage() {
                 <div className="flex items-center justify-center">
                   <div className="relative w-full max-w-md">
                     <div className="absolute -left-4 -top-4 h-72 w-72 rounded-lg bg-primary/10"></div>
-                    <img
+                    <Image
                       src="/placeholder.svg?height=500&width=500&text=Refonte+Site"
                       alt="Exemple de refonte de site"
                       className="relative z-10 w-full rounded-lg border shadow-lg"
@@ -531,7 +532,7 @@ export default function ServicesPage() {
                       <ul className="space-y-2 text-sm text-muted-foreground">
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />
-                          <span>Analyse de l'existant</span>
+                          <span>{`Analyse de l'existant`}</span>
                         </li>
                         <li className="flex items-start">
                           <Check className="mr-2 h-4 w-4 text-primary" />

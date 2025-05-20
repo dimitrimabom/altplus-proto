@@ -274,7 +274,7 @@ export default function ContactPage() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>Horaires d'ouverture</CardTitle>
+                <CardTitle>{`Horaires d'ouverture`}</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">

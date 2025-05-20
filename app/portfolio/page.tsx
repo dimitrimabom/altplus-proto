@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ProjectDialog } from "@/components/project-dialog";
+import Image from "next/image.js";
 
 // Types pour les projets
 interface Project {
@@ -469,7 +470,7 @@ function ProjectCard({ project, onSelect }: ProjectCardProps) {
   return (
     <Card className="h-full flex flex-col overflow-hidden group">
       <div className="aspect-video w-full overflow-hidden bg-muted">
-        <img
+        <Image
           src={project.image || "/placeholder.svg"}
           alt={project.title}
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"

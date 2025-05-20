@@ -27,6 +27,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image.js";
 
 export default function SitesVitrinePage() {
   return (
@@ -59,7 +60,7 @@ export default function SitesVitrinePage() {
             </Button>
           </div>
           <div className="mt-16 w-full max-w-5xl rounded-lg border bg-card/50 p-4 shadow-sm">
-            <img
+            <Image
               src="/placeholder.svg?height=600&width=1200&text=Site+Vitrine+Professionnel"
               alt="Exemple de site vitrine"
               className="w-full rounded-md object-cover"
@@ -168,7 +169,7 @@ export default function SitesVitrinePage() {
                 <ul className="list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                   <li>Formulaires de contact</li>
                   <li>Intégration de Google Maps</li>
-                  <li>Galeries d'images</li>
+                  <li>{`Galeries d'images`}</li>
                   <li>Liens vers les réseaux sociaux</li>
                 </ul>
               </CardContent>
@@ -187,7 +188,7 @@ export default function SitesVitrinePage() {
                   <li>Système de gestion de contenu</li>
                   <li>Interface intuitive</li>
                   <li>Mise à jour facile des textes et images</li>
-                  <li>Formation à l'utilisation incluse</li>
+                  <li>{`Formation à l'utilisation incluse`}</li>
                 </ul>
               </CardContent>
             </Card>
@@ -249,7 +250,7 @@ export default function SitesVitrinePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Phase+de+découverte"
                       alt="Phase de découverte"
                       className="rounded-lg shadow-md"
@@ -273,7 +274,7 @@ export default function SitesVitrinePage() {
                     <ul className="mt-4 space-y-2">
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Création de l'arborescence du site</span>
+                        <span>{`Création de l'arborescence du site`}</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -290,7 +291,7 @@ export default function SitesVitrinePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Phase+de+planification"
                       alt="Phase de planification"
                       className="rounded-lg shadow-md"
@@ -332,7 +333,7 @@ export default function SitesVitrinePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Phase+de+design"
                       alt="Phase de design"
                       className="rounded-lg shadow-md"
@@ -373,7 +374,7 @@ export default function SitesVitrinePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Phase+de+développement"
                       alt="Phase de développement"
                       className="rounded-lg shadow-md"
@@ -408,12 +409,12 @@ export default function SitesVitrinePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Vérification de l'accessibilité</span>
+                        <span>{`Vérification de l'accessibilité`}</span>
                       </li>
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Phase+de+tests"
                       alt="Phase de tests"
                       className="rounded-lg shadow-md"
@@ -442,7 +443,7 @@ export default function SitesVitrinePage() {
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
-                        <span>Formation à l'utilisation du CMS</span>
+                        <span>{`Formation à l'utilisation du CMS`}</span>
                       </li>
                       <li className="flex items-start">
                         <Check className="mr-2 h-5 w-5 text-primary" />
@@ -455,7 +456,7 @@ export default function SitesVitrinePage() {
                     </ul>
                   </div>
                   <div className="flex items-center justify-center">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=300&width=400&text=Phase+de+lancement"
                       alt="Phase de lancement"
                       className="rounded-lg shadow-md"
@@ -485,7 +486,7 @@ export default function SitesVitrinePage() {
           <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=ArchiDesign"
                   alt="ArchiDesign - Site vitrine pour un studio d'architecture"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -499,7 +500,7 @@ export default function SitesVitrinePage() {
                   <span className="text-sm text-muted-foreground">2024</span>
                 </div>
                 <CardTitle className="mt-2">ArchiDesign</CardTitle>
-                <CardDescription>Studio d'Architecture Moderne</CardDescription>
+                <CardDescription>{`Studio d'Architecture Moderne`}</CardDescription>
               </CardHeader>
               <CardContent className="p-4 pt-0">
                 <p className="text-sm text-muted-foreground">
@@ -517,7 +518,7 @@ export default function SitesVitrinePage() {
             </Card>
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=Centre+Médical"
                   alt="Centre Médical - Site vitrine pour une clinique"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
@@ -549,7 +550,7 @@ export default function SitesVitrinePage() {
             </Card>
             <Card className="overflow-hidden">
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                <img
+                <Image
                   src="/placeholder.svg?height=300&width=500&text=Voyages+et+Découvertes"
                   alt="Voyages & Découvertes - Blog de voyage"
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"

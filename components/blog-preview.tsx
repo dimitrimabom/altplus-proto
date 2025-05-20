@@ -55,7 +55,7 @@ export function BlogPreview() {
             <Card key={index} className="h-full flex flex-col">
               <CardHeader className="pb-4">
                 <div className="aspect-video w-full overflow-hidden rounded-lg bg-muted">
-                  <img
+                  <Image
                     src={`/placeholder.svg?height=200&width=400&text=Blog`}
                     alt={post.title}
                     className="h-full w-full object-cover"

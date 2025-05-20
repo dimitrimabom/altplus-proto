@@ -20,6 +20,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { TableOfContents } from "@/components/table-of-contents";
 import { CommentItem } from "@/components/comment-item";
+import Image from "next/image.js";
 
 // Cette fonction serait remplacée par une véritable fonction de récupération de données
 function getArticleBySlug(slug: string) {
@@ -189,7 +190,7 @@ Utilisez des formats d'image modernes comme WebP qui offrent une meilleure compr
 \`\`\`html
 <picture>
   <source srcset="image.webp" type="image/webp">
-  <img src="image.jpg" alt="Description">
+  <Image src="image.jpg" alt="Description">
 </picture>
 \`\`\`
 
@@ -198,7 +199,7 @@ Utilisez des formats d'image modernes comme WebP qui offrent une meilleure compr
 Servez des images de taille appropriée selon l'appareil de l'utilisateur. Utilisez les attributs \`srcset\` et \`sizes\`:
 
 \`\`\`html
-<img src="small.jpg"
+<Image src="small.jpg"
      srcset="small.jpg 500w,
              medium.jpg 1000w,
              large.jpg 1500w"
@@ -213,7 +214,7 @@ Servez des images de taille appropriée selon l'appareil de l'utilisateur. Utili
 Chargez les images uniquement lorsqu'elles apparaissent dans le viewport:
 
 \`\`\`html
-<img src="image.jpg" loading="lazy" alt="Description">
+<Image src="image.jpg" loading="lazy" alt="Description">
 \`\`\`
 
 ## Minification et compression
@@ -630,7 +631,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
           {/* Featured Image */}
           <div className="my-8 overflow-hidden rounded-lg bg-muted">
-            <img
+            <Image
               src={article.image || "/placeholder.svg"}
               alt={article.title}
               className="h-full w-full object-cover"
@@ -728,7 +729,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                   {article.relatedArticles.map((relatedArticle) => (
                     <Card key={relatedArticle.slug} className="overflow-hidden">
                       <div className="aspect-video w-full bg-muted">
-                        <img
+                        <Image
                           src={relatedArticle.image || "/placeholder.svg"}
                           alt={relatedArticle.title}
                           className="h-full w-full object-cover"
@@ -954,7 +955,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 </span>
                 <div className="flex items-center space-x-4">
                   <div className="h-16 w-16 overflow-hidden rounded-md bg-muted flex-shrink-0">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=64&width=64&text=Performance"
                       alt="Comment améliorer la vitesse de chargement de votre site"
                       className="h-full w-full object-cover"
@@ -978,7 +979,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 </span>
                 <div className="flex items-center space-x-4 flex-row-reverse">
                   <div className="h-16 w-16 overflow-hidden rounded-md bg-muted flex-shrink-0">
-                    <img
+                    <Image
                       src="/placeholder.svg?height=64&width=64&text=Responsive"
                       alt="L'importance du responsive design"
                       className="h-full w-full object-cover"
