@@ -5,7 +5,6 @@ import {
   ChevronRight,
   CreditCard,
   Globe,
-  Laptop,
   Package,
   ShoppingBag,
   ShoppingCart,

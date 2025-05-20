@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -22,10 +24,9 @@ import { TableOfContents } from "@/components/table-of-contents";
 import { CommentItem } from "@/components/comment-item";
 import Image from "next/image.js";
 
+
 // Cette fonction serait remplacée par une véritable fonction de récupération de données
-function getArticleBySlug(slug: string) {
-  // Articles factices
-  const articles = [
+const articles = [
     {
       slug: "tendances-web-2025",
       title: "10 tendances web à suivre en 2025",
@@ -497,8 +498,6 @@ Investir dans un design responsive aujourd'hui, c'est s'assurer que votre site r
     },
   ];
 
-  return articles.find((article) => article.slug === slug) || null;
-}
 
 function formatDate(dateString: string) {
   const options: Intl.DateTimeFormatOptions = {
@@ -539,8 +538,26 @@ function markdownToHtml(markdown: string) {
   return html;
 }
 
-export default function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = getArticleBySlug(params.slug);
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+const Page = ({ params }: PageProps) => {
+  const { slug } = params;
+
+  console.log("Slug:", slug);
+  console.log("Articles:", articles);
+  
+  
+  // Rechercher l'article correspondant au slug
+  articles.map((article) => {
+    if (article.slug === slug) {
+      return article;
+    }
+  });
+  const article = articles.find((article) => article.slug === slug);
 
   if (!article) {
     return (
@@ -998,4 +1015,6 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </div>
     </div>
   );
-}
+};
+
+export default Page;
