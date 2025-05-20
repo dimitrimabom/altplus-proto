@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image.js";
 
 export default function BlogPage() {
   const categories = ["Tous", "Design", "Développement", "Marketing", "SEO"];
